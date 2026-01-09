@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELFBAR AF5000</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111827;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f25f7a, #f7b1c2);
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    header nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #f7b1c2, #fde7ec);
+      padding: 120px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      line-height: 1;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .hero span {
+      font-size: 24px;
+      display: block;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 34px;
+      border-radius: 30px;
+      background: #f25f7a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 100px 60px;
+    }
+
+    .about {
+      background: linear-gradient(135deg, #fda4af, #ffe4e6);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .about h2 {
+      font-size: 42px;
+      color: #ef4444;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 480px;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .parameters {
+      background: linear-gradient(135deg, #e9d5ff, #ede9fe);
+    }
+
+    .parameters h2 {
+      color: #a855f7;
+      font-size: 40px;
+      margin-bottom: 60px;
+    }
+
+    .param-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .param {
+      border: 1px solid rgba(255,255,255,0.6);
+      padding: 24px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.35);
+      font-size: 14px;
+    }
+
+    .flavors {
+      background: linear-gradient(135deg, #e0f2fe, #ecfeff);
+    }
+
+    .flavors h2 {
+      font-size: 42px;
+      color: #0284c7;
+      margin-bottom: 50px;
+    }
+
+    .flavor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .flavor {
+      text-align: center;
+    }
+
+    .flavor img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .how {
+      background: linear-gradient(135deg, #fecaca, #ffe4e6);
+    }
+
+    .how h2 {
+      color: #dc2626;
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .package {
+      background: linear-gradient(135deg, #fbcfe8, #fdf2f8);
+    }
+
+    .package h2 {
+      font-size: 48px;
+      color: #ec4899;
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background: #f472b6;
+      color: #fff;
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer input {
+      padding: 12px;
+      width: 70%;
+      border-radius: 8px;
+      border: none;
+    }
+
+    footer button {
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: none;
+      background: #fff;
+      color: #f472b6;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .about { grid-template-columns: 1fr; text-align: center; }
+      .param-grid, .flavor-grid, .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>ELFBAR</strong>
+  <nav>
+    <a href="#">about</a>
+    <a href="#">parameters</a>
+    <a href="#">flavors</a>
+    <a href="#">use</a>
+    <a href="#">package</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>AF5000</h1>
+    <span>PUFFS</span>
+    <a class="btn" href="#">learn more</a>
+  </div>
+  <div>
+    <img src="MAINPAGE.png" alt="Elfbar" style="width:100%; max-width:380px;">
+  </div>
+</section>
+
+<section class="about">
+  <div>
+    <h2>ABOUT ELFBAR AF5000</h2>
+    <p>The ELFBAR AF5000 is a high-performance disposable vape with a sleek design and smooth flavor experience.</p>
+  </div>
+  <div>
+    <img src="MAINPAGE.png" alt="Product" style="width:100%; max-width:300px;">
+  </div>
+</section>
+
+<section class="parameters">
+  <h2>PRODUCT PARAMETERS</h2>
+  <div class="param-grid">
+    <div class="param">Size<br><strong>93 x 40 x 20 mm</strong></div>
+    <div class="param">Puffs<br><strong>Up to 5000</strong></div>
+    <div class="param">Strength<br><strong>20 mg/ml</strong></div>
+    <div class="param">Charging<br><strong>Type-C</strong></div>
+    <div class="param">Capacity<br><strong>21 ml</strong></div>
+    <div class="param">Refill<br><strong>10 ml</strong></div>
+  </div>
+</section>
+
+<section class="flavors">
+  <h2>A FLAVOR FOR EVERY MOOD</h2>
+  <div class="flavor-grid">
+    <div class="flavor"><img src="MAINPAGE.png"><p>Flavourless</p></div>
+    <div class="flavor"><img src="MAINPAGE.png"><p>Melon Ice</p></div>
+    <div class="flavor"><img src="MAINPAGE.png"><p>Menthol</p></div>
+  </div>
+</section>
+
+<section class="how">
+  <h2>HOW TO USE</h2>
+  <div class="steps">
+    <div class="step">Take out</div>
+    <div class="step">Pull</div>
+    <div class="step">Slide</div>
+    <div class="step">Flip</div>
+    <div class="step">Enjoy</div>
+  </div>
+</section>
+
+<section class="package">
+  <h2>PRODUCT PACKAGE</h2>
+  <img src="MAINPAGE.png" alt="Package" style="width:100%; max-width:600px;">
+</section>
+
+<footer>
+  <div>
+    <strong>ELFBAR</strong><br><br>
+    Follow us
+  </div>
+  <div>
+    Subscribe<br><br>
+    <input type="email" placeholder="Your email"><button>send</button>
+  </div>
+</footer>
+
+</body>
+</html>
